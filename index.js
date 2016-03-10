@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/public'));
 
 // index.html
 app.get('/', function(req, res){
-  res.sendfile('index.html');
+  res.sendfile('room.html');
 });
 app.get('/assets/patterns.php', function(req, res){
   res.sendfile('info.json');
@@ -27,6 +27,7 @@ var numUsers = 0;
 // Socket IO.
 io.on('connection', function(socket){
   socket.emit('connect');
+  console.log('Receiving connect event.');
   // when the client emits 'add user', this listens and executes
   socket.on('join room', function (msg) {
     // we store the msg in the socket session for this client

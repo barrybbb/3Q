@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://conceptboard.com/__/xdomainstorage#https://conceptboard.com -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+//    document.domain = document.domain;//normalize the document.domain field
+var dojoConfig = {
+async:false
+};
+var sp = {
+global:{},
+info: {
+user:{
+nonce   : 'XHOX4AXAR2JV1D1Q0BZVQNDCSPRZF6L6',
+id      : '6670980671'
+},
+app: {
+baseUrl         : '/',
+serverUrlHttps  : 'https:\/\/conceptboard.com',
+serverhost      : 'conceptboard.com'
+}
+}
+};
+</script>
+
+<script type="text/javascript" src="dojo.js"></script>
+
+<script type="text/javascript">
+require.on("error", function(error){
+console.error("loader.error", error.src, error.id); 
+});
+
+require({
+baseUrl:'/_/js-master-REL-153/',
+packages: [
+{
+name:"dojo",
+location    :"./dojo"
+},
+{
+name:"dijit",
+location    :"./dijit"
+},
+{
+name:"dojox",
+location    :"./dojox"
+},
+{
+name:"org",
+location    :"./org"
+},
+{
+name:"layer",
+location    :"./layer"
+},
+{
+name:"sp",
+location    :"./sp"
+},
+{
+name:"wp",
+location    :"./wp"
+},
+{
+name:"plupload",
+location    :"./plupload"
+},
+{
+name:"cb",
+location    :"./cb"
+},
+{
+name:"crypto",
+location : "./cb/ext/sjcl/crypto"
+}
+]
+});
+</script>
+
+<script type="text/javascript">
+require(["require", "layer/xdomainstorage"], function(require){
+require("cb/xdomain/storage/ServerPage").init();
+});
+</script>
+
+</head><body>
+</body></html>
